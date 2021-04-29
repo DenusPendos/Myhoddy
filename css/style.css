@@ -1,0 +1,397 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+/* background-color: rgb(236, 236, 147); */
+.wrapper .container .footer .footer__row .footer__item .footer__row .footer__item_text .text, .wrapper .container .footer .footer__row .footer__item .footer__column .footer__item, .wrapper .container .sorry, .wrapper .container .consequence-hobby .consequence-hobby__item .text-hobby .text, .wrapper .container .consequence-hobby .consequence-hobby__item .title-hobby, .wrapper .container .time-hobby-block .list-task .time-hobby .text-hobby .text, .wrapper .container .time-hobby-block .list-task .time-hobby .title-hobby, .wrapper .container .time-hobby-block .list-task .list-title, .wrapper .container .time-hobby-block .title, .wrapper .container .list-hobby .title-footer, .wrapper .container .list-hobby .list .learn, .wrapper .container .list-hobby .list .sport, .wrapper .container .list-hobby .list .layout, .wrapper .container .list-hobby .list .program, .wrapper .container .list-hobby .title, .wrapper .container .ctruct-content .ctruct-content__line li, .wrapper .container .ctruct-content .ctruct-content__text, .wrapper .container .introduction-hobby .introduction-hobby__text {
+  color: #707070;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+.wrapper .container .time-hobby-block .list-task .list-title span::before, .wrapper .container .list-hobby .list .learn::before, .wrapper .container .list-hobby .list .sport::before, .wrapper .container .list-hobby .list .layout::before, .wrapper .container .list-hobby .list .program::before {
+  position: absolute;
+  left: -15px;
+  top: 0;
+  content: "";
+  width: 100px;
+  height: 40px;
+  z-index: -1;
+}
+
+.wrapper .container .footer, .wrapper .container .sorry, .wrapper .container .consequence-hobby, .wrapper .container .time-hobby-block, .wrapper .container .list-hobby .title-footer, .wrapper .container .list-hobby .list .learn, .wrapper .container .list-hobby .list .sport, .wrapper .container .list-hobby .list .layout, .wrapper .container .list-hobby .list .program, .wrapper .container .list-hobby .title, .wrapper .container .ctruct-content .ctruct-content__line li, .wrapper .container .ctruct-content .ctruct-content__text, .wrapper .container .introduction-hobby, .wrapper .container .header {
+  opacity: 0;
+  transform: translate(0, -10%);
+  transition: all 1s ease 0s;
+}
+
+.wrapper .container .footer._active, .wrapper .container .sorry._active, .wrapper .container .consequence-hobby._active, .wrapper .container .time-hobby-block._active, .wrapper .container .list-hobby .title-footer._active, .wrapper .container .list-hobby .list .learn._active, .wrapper .container .list-hobby .list .sport._active, .wrapper .container .list-hobby .list .layout._active, .wrapper .container .list-hobby .list .program._active, .wrapper .container .list-hobby .title._active, .wrapper .container .ctruct-content .ctruct-content__line li._active, .wrapper .container .ctruct-content .ctruct-content__text._active, .wrapper .container .introduction-hobby._active, .wrapper .container .header._active {
+  opacity: 1;
+  transform: translate(0);
+  transition: all 1s ease 0s;
+}
+
+.wrapper {
+  font-family: "Montserrat";
+}
+.wrapper .container {
+  width: 1600px;
+  margin: 0 auto;
+}
+@media (max-width: 1620px) {
+  .wrapper .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+.wrapper .container .header {
+  padding: 80px;
+  margin-bottom: 160px;
+}
+.wrapper .container .header .title {
+  padding: 25px 20px;
+  margin: 0 30%;
+  text-align: center;
+  color: #707070;
+  font-size: 45px;
+  font-weight: 700;
+  text-shadow: 5px 15px 60px #707070;
+  background-color: #A8E4E0;
+}
+.wrapper .container .introduction-hobby {
+  padding: 30px;
+  margin-bottom: 160px;
+}
+.wrapper .container .ctruct-content {
+  margin-bottom: 160px;
+}
+.wrapper .container .ctruct-content .ctruct-content__text {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.wrapper .container .ctruct-content .ctruct-content__line li {
+  position: relative;
+  left: 38%;
+  text-align: left;
+  font-size: 25px;
+  margin-bottom: 15px;
+  max-width: 600px;
+}
+.wrapper .container .ctruct-content .ctruct-content__line li:last-child {
+  margin-bottom: 0;
+}
+.wrapper .container .ctruct-content .ctruct-content__line li::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 8px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 15px solid #A8E4E0;
+  border-bottom: 10px solid transparent;
+}
+.wrapper .container .ctruct-content .ctruct-content__line li._active:nth-child(1) {
+  transition: all 1s ease 0s;
+}
+.wrapper .container .ctruct-content .ctruct-content__line li._active:nth-child(2) {
+  transition: all 1s ease 1s;
+}
+.wrapper .container .ctruct-content .ctruct-content__line li._active:nth-child(3) {
+  transition: all 1s ease 2s;
+}
+.wrapper .container .ctruct-content .ctruct-content__line li._active:nth-child(4) {
+  transition: all 1s ease 3s;
+}
+.wrapper .container .list-hobby {
+  margin-bottom: 160px;
+}
+.wrapper .container .list-hobby .title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.wrapper .container .list-hobby .list {
+  position: relative;
+  left: 35%;
+  max-width: 800px;
+}
+.wrapper .container .list-hobby .list .program {
+  position: relative;
+  top: 0;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.wrapper .container .list-hobby .list .program::before {
+  background-color: #94bdf3;
+  opacity: 0.7;
+}
+.wrapper .container .list-hobby .list .layout {
+  position: relative;
+  top: 0;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.wrapper .container .list-hobby .list .layout::before {
+  background-color: #F39E71;
+  opacity: 0.7;
+}
+.wrapper .container .list-hobby .list .sport {
+  position: relative;
+  top: 0;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.wrapper .container .list-hobby .list .sport::before {
+  background-color: #a0a1a3;
+  opacity: 0.7;
+}
+.wrapper .container .list-hobby .list .learn {
+  position: relative;
+  top: 0;
+  font-size: 25px;
+  margin-bottom: 15px;
+  width: 300px;
+}
+.wrapper .container .list-hobby .list .learn::before {
+  background-color: #D0F294;
+  height: 100px;
+}
+.wrapper .container .list-hobby .list .layout._active {
+  transition: all 1s ease 1s;
+}
+.wrapper .container .list-hobby .list .sport._active {
+  transition: all 1s ease 2s;
+}
+.wrapper .container .list-hobby .list .learn._active {
+  transition: all 1s ease 3s;
+}
+.wrapper .container .list-hobby .title-footer {
+  width: 800px;
+  margin: 0 auto;
+  padding: 60px;
+  font-size: 25px;
+}
+.wrapper .container .list-hobby .title-footer._active {
+  transition: all 1s ease 0s;
+}
+.wrapper .container .time-hobby-block {
+  margin-bottom: 160px;
+}
+.wrapper .container .time-hobby-block .title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.wrapper .container .time-hobby-block .list-task {
+  width: 60%;
+  margin: 0 auto;
+}
+.wrapper .container .time-hobby-block .list-task .list-title {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+.wrapper .container .time-hobby-block .list-task .list-title span {
+  position: relative;
+  top: 0;
+}
+.wrapper .container .time-hobby-block .list-task .list-title span::before {
+  background-color: #e74343;
+  width: 90px;
+  height: 30px;
+}
+.wrapper .container .time-hobby-block .list-task .time-hobby .title-hobby {
+  text-align: center;
+  margin: 20px 0;
+}
+.wrapper .container .time-hobby-block .list-task .time-hobby .text-hobby {
+  position: relative;
+}
+.wrapper .container .time-hobby-block .list-task .time-hobby .text-hobby img {
+  position: absolute;
+  top: 0;
+  left: 38%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  opacity: 1;
+  transition: all 1s ease 0s;
+}
+.wrapper .container .time-hobby-block .list-task .time-hobby .text-hobby .text {
+  min-height: 300px;
+  font-size: 25px;
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+.wrapper .container .time-hobby-block .list-task .time-hobby .text-hobby:hover img {
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+.wrapper .container .time-hobby-block .list-task .time-hobby .text-hobby:hover .text {
+  opacity: 1;
+  transition: all 1s ease 0s;
+}
+.wrapper .container .consequence-hobby {
+  margin-bottom: 160px;
+}
+.wrapper .container .consequence-hobby .consequence-hobby__item {
+  margin-bottom: 30px;
+}
+.wrapper .container .consequence-hobby .consequence-hobby__item .title-hobby {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.wrapper .container .consequence-hobby .consequence-hobby__item .text-hobby {
+  position: relative;
+}
+.wrapper .container .consequence-hobby .consequence-hobby__item .text-hobby img {
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  opacity: 1;
+  transition: all 1s ease 0s;
+}
+.wrapper .container .consequence-hobby .consequence-hobby__item .text-hobby .text {
+  margin: 0 auto;
+  max-width: 700px;
+  min-height: 300px;
+  font-size: 25px;
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+.wrapper .container .consequence-hobby .consequence-hobby__item .text-hobby:hover img {
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+.wrapper .container .consequence-hobby .consequence-hobby__item .text-hobby:hover .text {
+  opacity: 1;
+  transition: all 1s ease 0s;
+}
+.wrapper .container .consequence-hobby .program .text-hobby img {
+  left: 30%;
+  width: 700px;
+  height: 500px;
+}
+.wrapper .container .sorry {
+  margin-bottom: 160px;
+  text-align: center;
+}
+.wrapper .container .footer {
+  width: 100%;
+  padding-bottom: 30px;
+}
+.wrapper .container .footer .footer__row {
+  display: flex;
+  justify-content: space-around;
+}
+.wrapper .container .footer .footer__row .footer__item .footer__column {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .container .footer .footer__row .footer__item .footer__column .footer__item {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.wrapper .container .footer .footer__row .footer__item .footer__column .footer__item:last-child {
+  margin-bottom: 0;
+}
+.wrapper .container .footer .footer__row .footer__item .footer__row {
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .container .footer .footer__row .footer__item .footer__row .footer__item_text {
+  width: 300px;
+  height: 300px;
+  background-color: #9e9e9e;
+}
+.wrapper .container .footer .footer__row .footer__item .footer__row .footer__item_text .text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-size: 80px;
+  color: #fa0000;
+  transform: translate(-50%, -50%);
+  max-width: 60px;
+}
+.wrapper .container .footer .footer__row .footer__item .footer__row .footer__item {
+  width: 300px;
+  height: 300px;
+}
+.wrapper .container .footer .footer__row .footer__item .footer__row .footer__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
